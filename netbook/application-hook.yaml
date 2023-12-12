@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontPage
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      page: front
+  template:
+    matadata:
+      labels:
+        page: front
+    spec:
+      containers:
+        - name: main
+          image: nginx:latest

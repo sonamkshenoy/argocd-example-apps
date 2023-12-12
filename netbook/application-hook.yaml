@@ -8,7 +8,7 @@ spec:
     matchLabels:
       page: front
   template:
-    matadata:
+    metadata:
       labels:
         page: front
     spec:

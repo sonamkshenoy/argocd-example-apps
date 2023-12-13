@@ -1,17 +1,14 @@
-apiVersion: apps/v1
-kind: ReplicaSet
+
+apiVersion: batch/v1
+kind: Job
 metadata:
-  name: frontpage
+  name: bookJob
+  annotations:
+    argocd.argoproj.io/hook: PreSync
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      page: front
   template:
-    metadata:
-      labels:
-        page: front
     spec:
       containers:
-        - name: main
-          image: nginx:latest
+        - name: run-something
+        image: alpine:latest
+        command: ["sleep", "30"]

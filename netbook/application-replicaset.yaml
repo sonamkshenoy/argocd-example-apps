@@ -23,7 +23,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: bookkjob
+  name: deletepage
   annotations:
     argocd.argoproj.io/hook: PostSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
@@ -33,5 +33,5 @@ spec:
       containers:
         - name: run-something
           image: alpine:latest
-          command: ["sleep", "2"]
+          command: ["echo", "hello"]
       restartPolicy: Never

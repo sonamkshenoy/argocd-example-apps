@@ -5,7 +5,7 @@ kind: ReplicaSet
 metadata:
   name: frontpage
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       page: front

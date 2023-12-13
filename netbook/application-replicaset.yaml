@@ -33,5 +33,5 @@ spec:
       containers:
         - name: run-something
           image: alpine:latest
-          command: ["sleep", "30"]
+          command: ["sleep", "2"]
       restartPolicy: Never

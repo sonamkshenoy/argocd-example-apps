@@ -33,5 +33,5 @@ spec:
       containers:
         - name: run-something
           image: alpine:latest
-          command: ["echo", "hello"]
+          command: ["echo", "I am super quickk!!"]
       restartPolicy: Never

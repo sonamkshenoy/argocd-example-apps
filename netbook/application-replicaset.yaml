@@ -16,7 +16,7 @@ spec:
         - name: main
           image: nginx:latest
 
------
+---
 
 apiVersion: batch/v1
 kind: Job

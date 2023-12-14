@@ -19,3 +19,20 @@ spec:
           image: nginx:latest
 
 
+---
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: deletepagee
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+        - name: run-something
+          image: alpine:latest
+          command: ["echo", "exit 1"]
+      restartPolicy: Never

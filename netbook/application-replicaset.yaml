@@ -33,5 +33,5 @@ spec:
       containers:
         - name: run-something
           image: alpine:latest
-          command: ["echo", "I am super quickkk!!"]
+          command: ["/bin/sh", "-c", "exit 1"]
       restartPolicy: Never

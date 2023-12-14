@@ -5,7 +5,7 @@ kind: ReplicaSet
 metadata:
   name: frontpage
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       page: front
@@ -26,7 +26,7 @@ kind: Job
 metadata:
   name: deletepagee
   annotations:
-    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:

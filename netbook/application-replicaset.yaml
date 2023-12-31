@@ -12,7 +12,7 @@ spec:
   template:
     metadata:
       labels:
-        page: back
+        page: front
         color: tourqoise
     spec:
       containers:

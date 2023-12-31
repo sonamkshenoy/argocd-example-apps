@@ -13,6 +13,7 @@ spec:
     metadata:
       labels:
         page: front
+        color: black
     spec:
       containers:
         - name: main

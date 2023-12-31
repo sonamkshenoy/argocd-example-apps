@@ -13,7 +13,7 @@ spec:
     metadata:
       labels:
         page: front
-        color: br
+        color: brownish
     spec:
       containers:
         - name: main

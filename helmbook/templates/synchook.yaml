@@ -31,3 +31,13 @@ spec:
         - name: checkjob-alpinee
           image: alpine:{{ .Values.imageTag }}
           command: ["echo", "helloo"]
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: somecm
+  namespace: argocd
+data:
+  somedata: "somevalue"

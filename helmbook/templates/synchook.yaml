@@ -30,7 +30,7 @@ spec:
       containers:
         - name: checkjob-alpinee
           image: alpine:{{ .Values.imageTag }}
-          command: ["echo", "helloo"]
+          command: ["echo", "hellooooo"]
 
 ---
 

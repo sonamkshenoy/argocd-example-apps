@@ -40,4 +40,4 @@ metadata:
   name: somecm
   namespace: argocd
 data:
-  somedata: "somevalue"
+  somedata: "somevaluue"

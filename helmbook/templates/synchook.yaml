@@ -13,3 +13,21 @@ spec:
         - name: checkjob-alpinee
           image: alpine:{{ .Values.imageTag }}
           command: ["echo", "helloo"]
+
+---
+
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: testthejob
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+spec:
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: checkjob-alpinee
+          image: alpine:{{ .Values.imageTag }}
+          command: ["echo", "helloo"]

@@ -1,26 +1,26 @@
----
+# ---
 
-apiVersion: apps/v1
-kind: ReplicaSet
-metadata:
-  name: frontpage
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      page: front
-  template:
-    metadata:
-      labels:
-        page: front
-        color: tourqoise
-    spec:
-      containers:
-        - name: main
-          image: nginx:latest
+# apiVersion: apps/v1
+# kind: ReplicaSet
+# metadata:
+#   name: frontpage
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       page: front
+#   template:
+#     metadata:
+#       labels:
+#         page: front
+#         color: tourqoise
+#     spec:
+#       containers:
+#         - name: main
+#           image: nginx:latest
 
 
----
+# ---
 
 apiVersion: batch/v1
 kind: Job

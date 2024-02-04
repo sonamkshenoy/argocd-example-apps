@@ -1,8 +1,8 @@
 apiVersion: v2
-name: chart-with-another-dependency
-description: same as name
+name: "chart-with-another-dependency"
+description: "same as name"
 version: 0.1.0
 dependencies:
-  - name: redis
-    version: 15.0.3
-    repository: https://charts.bitnami.com/bitnami
+  - name: "redis"
+    version: "15.0.3"
+    repository: "https://charts.bitnami.com/bitnami"

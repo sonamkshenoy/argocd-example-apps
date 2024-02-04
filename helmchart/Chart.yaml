@@ -4,4 +4,5 @@ description: "same as name"
 version: 0.1.0
 dependencies:
   - name: "redis"
+    version: "17.3.10"
     repository: "https://charts.bitnami.com/bitnami"

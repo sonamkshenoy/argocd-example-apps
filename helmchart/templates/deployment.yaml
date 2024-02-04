@@ -13,6 +13,6 @@ spec:
         app: myapp
     spec:
       containers:
-        - name: whatever
+        - name: whateverrr
           image: nginx:stable
           

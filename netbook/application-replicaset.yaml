@@ -38,5 +38,5 @@ spec:
         - name: run-something
           image: alpine:latest
           # command: ["/bin/sh", "-c", "exit 1"]
-          command: ["echo", "hello"]
+          command: ["echo", "hellppo"]
       restartPolicy: Never

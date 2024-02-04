@@ -4,5 +4,5 @@ description: same as name
 version: 0.1.0
 dependencies:
   - name: redis
-    version: 15.0.0
+    version: 7.0.14-alpine
     repository: https://charts.bitnami.com/bitnami

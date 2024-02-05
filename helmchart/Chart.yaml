@@ -1,8 +1,8 @@
 apiVersion: v2
 name: "chart-with-another-dependency"
 description: "same as name"
-version: 0.1.2
+version: 0.1.3
 dependencies:
-  - name: "jenkins"
-    version: "12.4.8"
+  - name: "redis"
+    version: "17.3.10"
     repository: "https://charts.bitnami.com/bitnami"

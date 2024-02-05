@@ -1,6 +1,6 @@
 apiVersion: v2
 name: "chart-with-another-dependency"
-description: "same ass nname"
+description: "same hass nname"
 version: 0.1.4
 dependencies:
   - name: "jenkins"

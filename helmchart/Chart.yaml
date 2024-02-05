@@ -3,6 +3,6 @@ name: "chart-with-another-dependency"
 description: "same ass name"
 version: 0.1.4
 dependencies:
-  - name: "redis"
-    version: "17.3.10"
+  - name: "jenkins"
+    version: "12.6.5"
     repository: "https://charts.bitnami.com/bitnami"

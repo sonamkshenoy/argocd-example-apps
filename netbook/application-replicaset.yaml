@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: main
-          image: nginx:latest
-          command: ["/bin/sh", "-c", "exit 1"]
+          image: alpine:latest
+          command: ["echo", "helloooo"]
 
 
 

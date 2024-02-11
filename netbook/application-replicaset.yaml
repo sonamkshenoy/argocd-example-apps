@@ -18,25 +18,26 @@ spec:
       containers:
         - name: main
           image: nginx:latest
+          command: ["echo", "hellooo"]
 
 
 
 
----
+# ---
 
-apiVersion: batch/v1
-kind: Job
-metadata:
-  name: deletepagee
-  annotations:
-    argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
-spec:
-  template:
-    spec:
-      containers:
-        - name: run-something
-          image: alpine:latest
-          # command: ["/bin/sh", "-c", "exit 1"]
-          command: ["echo", "hellppo"]
-      restartPolicy: Never
+# apiVersion: batch/v1
+# kind: Job
+# metadata:
+#   name: deletepagee
+#   annotations:
+#     argocd.argoproj.io/hook: PreSync
+#     argocd.argoproj.io/hook-delete-policy: HookSucceeded
+# spec:
+#   template:
+#     spec:
+#       containers:
+#         - name: run-something
+#           image: alpine:latest
+#           # command: ["/bin/sh", "-c", "exit 1"]
+#           command: ["echo", "hellppo"]
+#       restartPolicy: Never

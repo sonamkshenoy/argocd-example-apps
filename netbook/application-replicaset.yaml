@@ -5,7 +5,7 @@ kind: ReplicaSet
 metadata:
   name: frontpage
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       page: front
@@ -20,16 +20,14 @@ spec:
           image: nginx:latest
 
 
-
-
 ---
 
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: deletepagee
+  name: deletepage
   annotations:
-    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
 spec:
   template:
@@ -38,5 +36,5 @@ spec:
         - name: run-something
           image: alpine:latest
           # command: ["/bin/sh", "-c", "exit 1"]
-          command: ["echo", "hellppo"]
+          command: ["echo", "hello"]
       restartPolicy: Never
